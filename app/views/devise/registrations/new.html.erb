@@ -1,3 +1,39 @@
+<div class="main-container">
+    <div class="img-lateral"></div>
+    <div class="form-area">
+        <div class="form-container">
+            <div class="form-content">
+                <h2 class="dinnerdash-tittle">
+                    dinnerdash
+                </h2>
+
+                <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+                    <div class="account-form">
+                            <%= f.label :Nome, class: "form-legenda" %> <br>
+                            <%# <%= f.text_field :name % > <br> %> 
+                            <%# <input type="text" class="input-t dialogext" required="required"> <br> %>
+                            <%= f.label :Email, class: "form-legenda" %> <br>
+                            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "input-text" %> <br>
+                            <%= f.label :Senha, class: "form-legenda" %> <br>
+                            <%= f.password_field class: "input-text"%> <br>
+                            <%= f.label :Confirme_sua_senha, class: "form-legenda" %> <br>
+                            <%= f.password_field class: "input-text"%> <br>
+                            <%= f.submit "cadastrar", class: "my-button" %>
+                    </div>
+                  <% end %>
+
+                <hr class="hr-divider">
+
+                <div class="change-form-container">
+                    <p class="change-form-legenda">Já possui conta?</p>
+                    <form action="index.html">
+                        <button class="my-button">fazer login</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <h2>Sign up</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
