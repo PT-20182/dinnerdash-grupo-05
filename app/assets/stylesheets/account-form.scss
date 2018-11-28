@@ -1,0 +1,128 @@
+/**
+ * CSS para a estilização dos formulários de login e signup
+ *
+ */
+
+
+ /* area do formulário */
+.form-area {
+    display: table;
+    margin: 0;
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgb(246, 246, 246);
+}
+
+ /* container que centraliza verticalmente os itens do formulário */
+.form-container {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* componente que contém o conteúdo do formulário, incluindo título e mudança entre cadastro/login*/
+.form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+    align-self: center;
+
+    margin: 0 4em;
+}
+
+/* titulo do site */
+.form-container .dinnerdash-tittle {
+    text-align: left;
+    font-size: 2.4em;
+    margin: 0 0 1.2em 0;
+
+    color: rgb(77, 77, 77);
+}
+
+/* flexbox que cuida do espaçamento dos itens do formulário em si */
+.account-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+/* entrada de text (inclui senha e email) do formulário */
+.input-text {
+    margin: 0.4em 0 0.8em 0;
+    padding: 0.4em;
+    font-size: 0.8em;
+    border-radius: 4px;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+/* legenda que explica que informação deve ser preenchida abaixo no formulário */
+.form-legenda {
+    color: rgb(80, 80, 80);
+    font-size: 0.55em;
+}
+
+/* container da area de troca de formulário (de signin para signup e vice-versa */
+.change-form-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    margin: 2.4em 0 0 0;
+}
+
+/* estrutura básica de um button */
+.my-button {
+    border-radius: 4px;
+    padding: 0.8em 0 0.8em 0;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+/* o botão de signup/signin */
+.account-form .my-button {
+    border: none;
+    background-color: #39cc6c;
+
+    color: #FFF;
+}
+.account-form .my-button:hover {
+    background-color: #1fa54e;
+}
+.account-form .my-button:active {
+    background-color: #4ace78;
+    border: 1px solid #1fa54e;
+}
+
+/* o botão de mudar de formulário */
+.change-form-container .my-button {
+    border: 1px solid #39cc6c;
+    background-color: #FFF;
+
+    color: #39cc6c;
+}
+.change-form-container .my-button:hover {
+    background-color: #39cc6c;
+    color: #FFF;
+}
+.change-form-container .my-button:active {
+    background-color: #1fa54e;
+    color: #FFF;
+}
+
+/* o divisor entre o formulário e a área de trocar de formulário */
+.form-content .hr-divider {
+    margin: 2.4em 0 0 0;
+
+    width: 100%;
+    align-self: center;
+    border: none;
+    height: 1px;
+    
+    background-color: rgb(189, 189, 189);
+}
+
+/* legenda para trocar de formulário */
+.change-form-legenda {
+    color: rgb(80, 80, 80);
+    font-size: 0.8em;
+}
