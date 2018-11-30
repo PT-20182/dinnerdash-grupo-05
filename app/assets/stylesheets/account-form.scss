@@ -92,10 +92,13 @@
 
 /* o botão de mudar de formulário */
 .change-form-container .my-button {
+    display: block;
+    text-align: center;
     border: 1px solid #39cc6c;
     background-color: #FFF;
 
     color: #39cc6c;
+    text-decoration: none;
 }
 .change-form-container .my-button:hover {
     background-color: #39cc6c;
