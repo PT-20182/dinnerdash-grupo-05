@@ -1,0 +1,24 @@
+/* imagem superior da pagina */
+.img-superior {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 3.2em 0 3.2em;
+}
+
+/* titulo da pagina */
+.img-superior .pagetitle-area .title {
+    font-size: 4em;
+}
+
+/* container do pagetitle */
+.pagetitle-area {
+    color: rgb(250, 250, 250);
+    margin-bottom: 1.6em;
+    font-weight: bold;
+}
+
+/* explicação do pagetitle */
+.img-superior .pagetitle-area .explanation {
+    font-size: 1.6em;
+}

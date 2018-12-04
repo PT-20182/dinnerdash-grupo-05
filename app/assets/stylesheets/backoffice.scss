@@ -1,0 +1,27 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.img-superior {
+    margin: 0;
+    height: auto;
+    flex-grow: 6;
+    background-size: cover;
+    background-image: url("helloquence-61189.jpg");
+}
+
+.table-area {
+    height: auto;
+    background-color: rgb(246, 246, 246);
+}
+
+.table-area * {
+    margin: 0.8em auto;
+}
