@@ -16,6 +16,7 @@
  /* container que centraliza verticalmente os itens do formulário */
 .form-container {
     display: table-cell;
+    height: 100%;
     vertical-align: middle;
 }
 
@@ -34,7 +35,7 @@
 .form-container .dinnerdash-tittle {
     text-align: left;
     font-size: 2.4em;
-    margin: 0 0 1.2em 0;
+    margin: 0 0 0.8em 0;
 
     color: rgb(77, 77, 77);
 }
@@ -49,7 +50,7 @@
 
 /* entrada de text (inclui senha e email) do formulário */
 .input-text {
-    margin: 0.4em 0 0.8em 0;
+    margin: 0.4em 0 0.6em 0;
     padding: 0.4em;
     border-radius: 4px;
     border: 1px solid rgb(189, 189, 189);
@@ -65,7 +66,7 @@
     display: flex;
     align-items: stretch;
     flex-direction: column;
-    margin: 2.4em 0 0 0;
+    margin: 1.6em 0 0 0;
 }
 
 /* estrutura básica de um button */
@@ -92,10 +93,13 @@
 
 /* o botão de mudar de formulário */
 .change-form-container .my-button {
+    display: block;
+    text-align: center;
     border: 1px solid #39cc6c;
     background-color: #FFF;
 
     color: #39cc6c;
+    text-decoration: none;
 }
 .change-form-container .my-button:hover {
     background-color: #39cc6c;
