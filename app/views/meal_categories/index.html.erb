@@ -10,7 +10,7 @@
     <span class="side-links">
       <span class="-active">backoffice</span>
       <span>perfil</span>
-      <span>sair</span>
+      <span><%= link_to 'sair', destroy_user_session_path, method: :delete, class: 'clean-link' %></span>
     </span>
   </div>
 
