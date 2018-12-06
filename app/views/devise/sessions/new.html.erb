@@ -1,26 +1,28 @@
-<h2>Log in</h2>
+<div class="main-container">
+  <div class="img-lateral"></div>
+  <div class="form-area">
+    <div class="form-container">
+      <div class="form-content">
+        <h2 class="dinnerdash-tittle">dinnerdash</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="account-form">
+            <%= f.label :email, class: 'form-legenda' %>
+            <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'input-text' %>
+            <%= f.label :password, class: 'form-legenda' %>
+            <%= f.password_field :password, autocomplete: "current-password", class: 'input-text' %>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+            <%= f.submit "fazer login", class: 'my-button' %>
+          </div>
+        <% end %>
 
-  <% if devise_mapping.rememberable? -%>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+        <hr class="hr-divider">
+
+        <div class="change-form-container">
+          <p class="change-form-legenda">Não possui conta?</p>
+          <%= link_to "fazer meu cadastro", new_user_registration_path, class: "my-button" %>
+        </div>
+      </div>
     </div>
-  <% end -%>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
   </div>
-<% end %>
-
-<%= render "devise/shared/links" %>
+</div>
