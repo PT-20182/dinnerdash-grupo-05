@@ -1,38 +1,12 @@
 <div class="main-container">
+  <!-- imagem superior -->
+  <%= render "superior_image" %>
 
-<!-- imagem superior -->
-<div class="img-superior">
+  <!-- menu seletor -->
+  <%= render "selector_menu" %>
 
-  <!-- menu superior -->
-  <div class="superior-menu navbar">
-    <span class="title navbar-brand">dinnerdash</span>
-
-    <span class="side-links">
-      <span class="-active">backoffice</span>
-      <span>perfil</span>
-      <span><%= link_to 'sair', destroy_user_session_path, method: :delete, class: 'clean-link' %></span>
-    </span>
+  <!-- area do form -->
+  <div class="table-area">
+    <%= render "category_form" %>
   </div>
-
-  <!-- titulo do backoffice -->
-  <div class="pagetitle-container">
-    <div class="pagetitle-area">
-      <div class="title">Backoffice</div>
-      <div class="explanation">Gerencie pedidos, refeições e mais.</div>
-    </div>
-  </div>
-</div>
-
-<!-- menu seletor -->
-<div class="selector-menu">
-  <div>Pedidos</div>
-  <div>Usuários</div>
-  <div>Refeições</div>
-  <div>Categorias de Refeições</div>
-</div>
-
-<!-- area do form -->
-<div class="table-area">
-  <%= render "category_form" %>
-</div>
 </div>
