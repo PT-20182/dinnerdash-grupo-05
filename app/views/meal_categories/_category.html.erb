@@ -3,5 +3,5 @@
   <td><%= category.meal_ammount %></td>
   <td><%= category.created_at %></td>
   <td><span class="editar">editar</span></td>
-  <td><span class="excluir">excluir</span></td>
+  <td> <%= link_to "excluir", category, method: :delete, class: "excluir" %> </td>
 </tr>
