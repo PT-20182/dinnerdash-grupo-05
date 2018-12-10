@@ -30,23 +30,32 @@
     width: 100%;
   }
 
-  .submit {
+  .button {
     border-radius: 4px;
     padding: 0.6em 0.8em;
     margin-bottom: 1.6em;
+    margin-right: 0.8em;
     // width: 100%;
 
     border: none;
-    background-color: #39cc6c;
+    background-color: rgb(127,127,127);
     color: #FFF;
-    
+
     &:hover {
-      background-color: #1fa54e;
+      text-decoration: none;
     }
-    
-    &:active {
-      background-color: #4ace78;
-      border: 1px solid #1fa54e;
+
+    &.submit {
+      background-color: #39cc6c;
+      
+      &:hover {
+        background-color: #1fa54e;
+      }
+      
+      &:active {
+        background-color: #4ace78;
+        border: 1px solid #1fa54e;
+      }
     }
   }
 }

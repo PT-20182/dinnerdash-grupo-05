@@ -1,22 +1,24 @@
 
 /* menu seletor */
 .selector-menu {
-    background-color: rgb(27, 27, 27);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 
-    padding-left: 3em;
+  padding-left: 3em;
 }
 
 /* itens do menu seletor */
-.selector-menu div {
-    color: rgb(246, 246, 246);
-    display: inline-block;
-    font-size: 0.8em;
-    padding: 0.8em;
-}
+.selector-menu > * {
+  color: rgb(246, 246, 246);
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0.8em;
 
-.selector-menu div:hover {
+  &:hover {
+    color: rgb(246, 246, 246);
     background-color: #333333;
+    text-decoration: none;
+  }
 }

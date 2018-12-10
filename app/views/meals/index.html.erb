@@ -1,0 +1,5 @@
+<% @meals.each do |meal| %>
+  <ul>
+    <li><%= image_tag url_for(meal.image) %></li>
+  </ul>
+<% end %>

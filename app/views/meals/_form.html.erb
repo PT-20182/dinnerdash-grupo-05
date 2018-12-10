@@ -1,0 +1,11 @@
+<%= form_with model: @meal, local: true do |f| %>
+  <%= f.label "Nome", class: "form-legenda" %>
+  <%= f.text_field :name, class: "input-text" %>
+  <%= collection_select(:meal, :meal_category_id, MealCategory.all, :id, :name, {:prompt => 'Selecione a categoria da refeição'})%>
+  
+  <%= f.text_area :description %>
+  <%= f.text_field :price %>
+  <%= f.file_field :image %>
+
+  <%= f.submit %>
+<% end %>
