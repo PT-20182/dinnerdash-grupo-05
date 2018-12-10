@@ -1,0 +1,76 @@
+.backoffice-table * {
+    font-family:  -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 0.9em;
+}
+
+.backoffice-table {
+    border-collapse: collapse;
+    background-color: rgb(232, 235, 238);
+}
+
+.backoffice-table .table-header {
+    background-color: #868686;
+}
+
+.backoffice-table tbody tr {
+    margin: 0 26em 0 2.4em;
+}
+
+.backoffice-table td {
+    padding: 0.4em;
+    margin: 0.4em 0.8em 0.4em 0.8em;
+    border-bottom: 1px solid #6B6C6D;
+}
+
+.backoffice-table th {
+    text-align: left;
+    padding: 15px;
+}
+
+.backoffice-table tr:nth-of-type(even){
+    background-color: rgb(203, 216, 231)
+}
+
+.backoffice-table tbody tr td span:first-child {
+    margin-left: 0.4em;
+}
+
+.backoffice-table tbody tr td .entregue {
+    background-color: #28a745;
+    color: #DEE2E6;
+    border-radius: 5px;
+    padding: 0.4em;
+    text-align: center;
+}
+
+.backoffice-table tbody tr td .pendente {
+    background-color: #007bff;
+    color: #DEE2E6;
+    border-radius: 5px;
+    padding: 0.4em;
+    text-align: center;
+}
+
+.backoffice-table tbody tr td .cancelado {
+    background-color: #E82431;
+    color: #DEE2E6;
+    border-radius: 5px;
+    padding: 0.4em;
+    text-align: center;
+}
+
+.backoffice-table tbody tr td .ver-itens {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.backoffice-table tbody tr td .editar {
+    color: #FDDF4C;
+    text-decoration: none;
+}
+
+.backoffice-table tbody tr td .excluir {
+    color: #E82431;
+    text-decoration: none;
+    margin-right: 0.4em;
+}

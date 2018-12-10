@@ -1,0 +1,59 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.img-superior {
+    margin: 0;
+    height: auto;
+    flex-grow: 6;
+    background-size: cover;
+    background-image: url("helloquence-61189.jpg");
+}
+
+.table-area {
+    height: auto;
+    width: fit-content;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.table-area * {
+    margin: 0.8em auto;
+}
+
+.newcateg-link {
+  display: inline-block;
+  color: rgb(246, 246, 246);
+  background-color: rgb(56, 203, 107);
+  padding: 0.4em;
+  border-radius: 3px;
+  align-self: flex-start;
+
+  &:hover {
+    background-color: #1fa54e;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: #4ace78;
+    border: 1px solid #1fa54e;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
+  }
+}
+
+.newcateg-container {
+  width: 100%;
+}

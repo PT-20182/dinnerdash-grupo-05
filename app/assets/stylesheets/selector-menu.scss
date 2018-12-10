@@ -1,0 +1,22 @@
+
+/* menu seletor */
+.selector-menu {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    padding-left: 3em;
+}
+
+/* itens do menu seletor */
+.selector-menu div {
+    color: rgb(246, 246, 246);
+    display: inline-block;
+    font-size: 0.8em;
+    padding: 0.8em;
+}
+
+.selector-menu div:hover {
+    background-color: #333333;
+}

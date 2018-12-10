@@ -1,0 +1,5 @@
+<%= form_with model: @meal_category, local: true do |f| %>
+  <%= f.label "Nome" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Inserir refeição", class: "classe"%>
+<% end %>
