@@ -1,4 +1,4 @@
-<div class="main-container">
+<div class="backoffice-main-container">
   <!-- imagem superior -->
   <%= render "superior_image" %>
 
@@ -7,7 +7,10 @@
 
   <!-- area do form -->
   <div class="table-area">
-    <h2>Nova categoria de refeição</h2>
-    <%= render "category_form" %>
+    <div class="category-form">
+      <h5>Nova categoria de refeição</h5>
+      <hr class="hr-divider">
+      <%= render "category_form" %>
+    </div>
   </div>
 </div>
