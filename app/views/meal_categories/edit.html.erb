@@ -1,3 +1,16 @@
-<h2>editar categoria<h2>
-<hr>
-<%= render 'category_form' %>
+<div class="backoffice-main-container">
+  <!-- imagem superior -->
+  <%= render "superior_image" %>
+
+  <!-- menu seletor -->
+  <%= render "selector_menu" %>
+
+  <!-- area do form -->
+  <div class="table-area">
+    <div class="category-form">
+      <h5>Editar Categoria</h5>
+      <hr class="hr-divider">
+      <%= render "category_form" %>
+    </div>
+  </div>
+</div>
