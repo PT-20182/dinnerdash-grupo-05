@@ -2,60 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.category-form {
-  width: 50%;
-  margin: 0;
 
-  .hr-divider {
-    width: 100%;
-    height: 3px;
-    margin: 4px 0;
-    color: #eeeeeee1;
-    border-radius: 2px;
-  }
-  
-  h5 {
-    color: #505050;
-    margin: 0.4em 0;
-    text-align: left;
+.newcateg-link {
+  display: inline-block;
+  color: rgb(246, 246, 246);
+  background-color: rgb(56, 203, 107);
+  padding: 0.4em;
+  margin-top: 0.6em;
+  border-radius: 3px;
+  align-self: flex-start;
+
+  &:hover {
+    background-color: #1fa54e;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
   }
 
-  label {
-    margin: 0.8em 0;
+  &:active {
+    background-color: #4ace78;
+    border: 1px solid #1fa54e;
+    color: rgb(246, 246, 246);
+    text-decoration: none;
   }
+}
 
-  .input-text {
-    margin: 0 0 0.8em 0;
-    display: block;
-    width: 100%;
-  }
-
-  .button {
-    border-radius: 4px;
-    padding: 0.6em 0.8em;
-    margin-bottom: 1.6em;
-    margin-right: 0.8em;
-    // width: 100%;
-
-    border: none;
-    background-color: rgb(127,127,127);
-    color: #FFF;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    &.submit {
-      background-color: #39cc6c;
-      
-      &:hover {
-        background-color: #1fa54e;
-      }
-      
-      &:active {
-        background-color: #4ace78;
-        border: 1px solid #1fa54e;
-      }
-    }
-  }
+.newcateg-container {
+  width: fit-content;
 }
