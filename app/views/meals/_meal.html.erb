@@ -1,0 +1,19 @@
+<div class="meal-container">
+  <div class="image-plus-name"
+    style='background-image: url("<%= url_for(meal.image) %>");'>
+    <% if false #!meal.available %>
+      <div class="not-available"><span>Refeição <strong>Indisponível</strong></span></div>
+    <% end %>
+    <span class="name-container">
+      <span class="name"><%= meal.name %></span>
+    </span>
+  </div>
+  <div class="description-plus-price">
+    <div class="description"><%= meal.description %></div>
+    <div class="price">R$ <%= meal.price %> por porção</div>
+    <div class="edit-exclude-area">
+      <%= link_to "editar", edit_meal_path(meal), class: "button -edit"%>
+      <%= link_to "excluir", meal, method: :delete, class: "button -exclude" %>
+    </div>
+  </div>
+</div>

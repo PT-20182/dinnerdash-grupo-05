@@ -1,12 +1,15 @@
 <%= form_with model: @meal, local: true do |f| %>
-  <div class="form-item half-size -left">
-    <%= f.label "Nome", class: "form-legenda" %>
-    <%= f.text_field :name, class: "input-text form-control" %>
-  </div>
+  
+  <div class="half-size-container">
+    <div class="form-item half-size">
+      <%= f.label "Nome", class: "form-legenda" %>
+      <%= f.text_field :name, class: "input-text form-control" %>
+    </div>
 
-  <div class="form-item half-size -right">
-    <%= f.label "Categoria", class: "form-legenda" %>
-    <%= collection_select(:meal, :meal_category_id, MealCategory.all, :id, :name, {:prompt => 'Selecione a categoria da refeição'}, class: 'form-control')%>
+    <div class="form-item half-size -right">
+      <%= f.label "Categoria", class: "form-legenda" %>
+      <%= collection_select(:meal, :meal_category_id, MealCategory.all, :id, :name, {:prompt => 'Selecione a categoria da refeição'}, class: 'form-control')%>
+    </div>
   </div>
   
   <div class="form-item">

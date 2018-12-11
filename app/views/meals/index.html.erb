@@ -1,5 +1,14 @@
-<% @meals.each do |meal| %>
-  <ul>
-    <li><%= image_tag url_for(meal.image) %></li>
-  </ul>
-<% end %>
+<div class="backoffice-main-container">
+
+  <!-- imagem superior -->
+  <%= render "backoffice/superior_image" %>
+
+  <!-- menu seletor -->
+  <%= render "backoffice/selector_menu" %>
+
+  <div class="meals-container">
+    <% @meals.each do |meal| %>
+      <%= render "meal", meal: meal %>
+    <% end %>
+  </div>
+</div>

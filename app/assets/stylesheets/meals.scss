@@ -11,23 +11,135 @@
     width: 100%;
     margin: 0;
     margin-bottom: 0.4em;
+    justify-content: space-between;
     display: inline-block;
 
     .input-text { margin: 0; }
   }
 
-  .half-size {
-    width: 47%;
-    &.-left {
-      margin-right: 2%;
+  .half-size-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    >.half-size {
+      width: 48%;
+      &.-right {
+        align-self: flex-end;
+      }
     }
-    &.-right {
-      margin-left: 2%;
-      align-self: flex-end;
+  }  
+}
+
+// componente de uma meal
+.meal-container {
+  // display: flex;
+  // flex-direction: column;
+  // display: inline-block;
+  border: 1px solid #5a5a5a;
+  width: 200px;
+
+  margin: 0.8em;
+
+  .image-plus-name {
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .name-container {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 25%;
+
+      background-color: #272727ce;
+      color: #FFF;
+
+      display: flex;
+      align-items: center;
+
+      .name {
+        margin-left: 0.4em;
+      }
+    }
+
+    .not-available {
+      width: 100%;
+      height: 75%;
+      background-color: #181818d5;
+      color: #FFF;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
+  .description-plus-price {
+    padding: 0.8em 0.6em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: inline-block;
+
+    .description {
+      color: #bdbdbd;
+    }
+
+    .price {
+      margin-top: 0.2em;
+      color: #37c00d;
+    }
+
+    .edit-exclude-area {
+      justify-self: flex-end;
+      display: flex;
+      justify-content: space-between;
   
+      > .button {
+        display: inline-block;
+        border-radius: 6px;
+        color: #FFF;
+        padding: 0.4em;
+        width: 47.5%;
+        text-align: center;
+  
+        &:hover {
+          text-decoration: none;
+        }
+        
+        &.-edit {
+          background-color: #f7f700;
+          &:hover {
+            background-color: #e6e600;
+          }
+          &:active {
+            background-color: #d8ca00
+          }
+        }
+        &.-exclude {
+          background-color: #e60707;
+          &:hover {
+            background-color: #dd0000;
+          }
+          &:active {
+            background-color: #cf0b0b
+          }
+        }
+      }
+    }
+  }
+
+}
+
+// container das meals em meals#index
+.meals-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .file-input {
