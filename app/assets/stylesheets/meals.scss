@@ -1,3 +1,64 @@
 // Place all the styles related to the meals controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.backoffice-form#meal-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .form-item {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.4em;
+    display: inline-block;
+
+    .input-text { margin: 0; }
+  }
+
+  .half-size {
+    width: 47%;
+    &.-left {
+      margin-right: 2%;
+    }
+    &.-right {
+      margin-left: 2%;
+      align-self: flex-end;
+    }
+  }
+
+  
+}
+
+.file-input {
+  margin-bottom: 0.4em;
+}
+// // customiza o file input. 100% colado do stack overflow sem vergonha
+// .custom-file-input {
+//   opacity: 1;
+//   font-size: 0;
+// }
+// .custom-file-input::-webkit-file-upload-button {
+//   visibility: hidden;
+// }
+// .custom-file-input::before {
+//   content: 'Escolher Aquivo...';
+//   display: inline-block;
+//   background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+//   border: 1px solid #999;
+//   border-radius: 3px;
+//   padding: 5px 8px;
+//   outline: none;
+//   white-space: nowrap;
+//   -webkit-user-select: none;
+//   cursor: pointer;
+//   text-shadow: 1px 1px #fff;
+//   font-weight: 700;
+//   font-size: 10pt;
+// }
+// .custom-file-input:hover::before {
+//   border-color: black;
+// }
+// .custom-file-input:active::before {
+//   background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+// }
