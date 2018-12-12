@@ -1,0 +1,18 @@
+<div class="backoffice-main-container">
+
+  <!-- imagem superior -->
+  <%= render "backoffice/superior_image" %>
+
+  <!-- menu seletor -->
+  <%= render "backoffice/selector_menu" %>
+
+  <div class="meals-container">
+    <% @meals.each do |meal| %>
+      <%= render "meal", meal: meal %>
+    <% end %>
+  </div>
+  <div class="newcateg-container">
+    <%= link_to "Criar nova refeição", new_meal_path, class: "newcateg-link add-margin" %>
+  </div>
+
+</div>
