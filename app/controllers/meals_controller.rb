@@ -7,7 +7,7 @@ class MealsController < ApplicationController
 
   def create
     @meal = Meal.new(meal_params)
-    @meal.save
+    @meal.save!
     redirect_to meals_path
   end
 
@@ -36,6 +36,6 @@ class MealsController < ApplicationController
     @meal = Meal.find(params[:id])
   end
   def meal_params
-    params.require(:meal).permit(:name, :meals_id, :description, :price, :image)
+    params.require(:meal).permit(:name, :meal_category_id, :description, :price, :image)
   end
 end
