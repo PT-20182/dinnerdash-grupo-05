@@ -1,0 +1,17 @@
+<div class="meal-container">
+  <div class="image-plus-name"
+    style='background-image: url("<%= url_for(meal.image) %>");'>
+    <span class="name-container">
+      <span class="name"><%= meal.name %></span>
+    </span>
+  </div>
+  <div class="description-plus-price">
+    <div class="description"><%= meal.description %></div>
+    <div class="price">R$ <%= meal.price %> por porção</div>
+    <div class="buy-area">
+      <span>Quantidade</span>
+      <select name="" id="" class="form-control quant-selector"></select>
+      <a href="" class="button">Adicionar ao meu prato</a>
+    </div>
+  </div>
+</div>

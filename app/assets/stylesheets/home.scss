@@ -1,0 +1,58 @@
+.home-container {
+  background-color: #f6feff;
+
+  .mealcateg-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em 3% 0 3%;
+
+    .categ-title {
+      margin-left: 0.4em;
+      margin-bottom: 0;
+      color: #999999;
+    }
+  }
+
+
+  .meals-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 0.2em;
+
+    .meal-container {
+      background-color: #FFF;
+      margin-top: 0.2em;
+      width: 240px;
+    }
+    .meal-container .buy-area {
+      display: flex;
+      flex-direction: column;
+      justify-content: stretch;
+
+      .quant-selector {
+        align-self: flex-start; 
+      }
+      > .button {
+        align-self: center;
+        display: inline-block;
+        border-radius: 6px;
+        color: #FFF;
+        padding: 0.4em;
+        margin: 0.4em 0.2em 0 0.2em;
+        width: 98%;
+        text-align: center;
+        background-color: #43e901;
+  
+        &:hover {
+          text-decoration: none;
+          background-color: #31d810;
+        }
+
+        &:active {
+          background-color: #30c212
+        }
+      }
+    }
+  }
+}

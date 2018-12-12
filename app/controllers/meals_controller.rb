@@ -7,6 +7,7 @@ class MealsController < ApplicationController
 
   def create
     @meal = Meal.new(meal_params)
+    @meal.available = true
     @meal.save!
     redirect_to meals_path
   end
@@ -20,7 +21,7 @@ class MealsController < ApplicationController
     redirect_to meals_url
   end
 
-  def edit 
+  def edit
   end
 
   def update
