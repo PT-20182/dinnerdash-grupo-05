@@ -1,0 +1,94 @@
+.backoffice-main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.img-superior {
+    margin: 0;
+    height: auto;
+    flex-grow: 6;
+    background-size: cover;
+    background-image: url("helloquence-61189.jpg");
+}
+
+.table-area {
+    height: auto;
+    width: 100%;
+    // width: fit-content;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-items: flex-start;
+    align-items: center;
+}
+
+.table-area > * {
+    margin: 0.8em auto;
+}
+.backoffice-form {
+  width: 85%;
+  margin: 0 auto;
+
+  .hr-divider {
+    width: 100%;
+    height: 3px;
+    margin: 4px 0;
+    color: #eeeeeee1;
+    border-radius: 2px;
+  }
+  
+  h5 {
+    color: #505050;
+    margin: 0.4em 0;
+    text-align: left;
+  }
+
+  label {
+    margin: 0.6em 0 0.4em 0;
+  }
+
+  .input-text {
+    margin: 0 0 0.8em 0;
+    display: block;
+    width: 100%;
+  }
+
+  .button {
+    border-radius: 4px;
+    padding: 0.6em 0.8em;
+    margin-bottom: 1.6em;
+    margin-right: 0.8em;
+    height: 2.4em;
+    // min-height: 2em;
+    // max-height: fit-content;
+
+    border: none;
+    background-color: rgb(127,127,127);
+    color: #FFF;
+
+    &:hover {
+      text-decoration: none;
+      background-color: rgb(102, 102, 102);
+    }
+    &:active {
+      text-decoration: none;
+      background-color: rgb(71, 71, 71);
+    }
+
+    &.submit {
+      background-color: #39cc6c;
+      
+      &:hover {
+        background-color: #1fa54e;
+      }
+      
+      &:active {
+        background-color: #4ace78;
+        border: 1px solid #1fa54e;
+      }
+    }
+  }
+}

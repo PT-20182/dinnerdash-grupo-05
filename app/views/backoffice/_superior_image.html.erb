@@ -1,0 +1,22 @@
+<!-- imagem superior -->
+<div class="img-superior">
+
+  <!-- menu superior -->
+  <div class="superior-menu navbar">
+    <span class="title navbar-brand">dinnerdash</span>
+
+    <span class="side-links">
+      <span class="-active">backoffice</span>
+      <span>perfil</span>
+      <span><%= link_to 'sair', destroy_user_session_path, method: :delete, class: 'clean-link' %></span>
+    </span>
+  </div>
+
+  <!-- titulo do backoffice -->
+  <div class="pagetitle-container">
+    <div class="pagetitle-area">
+      <div class="title">Backoffice</div>
+      <div class="explanation">Gerencie pedidos, refeições e mais.</div>
+    </div>
+  </div>
+</div>

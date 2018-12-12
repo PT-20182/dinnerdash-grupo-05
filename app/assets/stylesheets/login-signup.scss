@@ -1,0 +1,24 @@
+* {
+    font-family: "Circular Std Book", Helvetica, serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.img-lateral {
+    margin: 0;
+    height: auto;
+    width: 75%;
+    background-size: cover;
+    background-image: url("sabri-tuzcu-365440.jpg");
+}
+
+@media only screen and (max-width: 600px) {
+    .img-lateral {
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+.superior-menu {
+  color: rgb(224, 224, 224);
+  padding-left: 0;
+  font-weight: bold;
+}
+
+.superior-menu .title {
+  font-family: 'Amaranth', sans-serif;
+}
+
+.superior-menu > .side-links > * {
+  margin: 0 0.4em 0 0.4em;
+  text-decoration: none;
+  color: rgb(224, 224, 224);
+}
+.clean-link {
+  color: rgb(224, 224, 224);
+  text-decoration: none;
+}
+.clean-link:hover {
+  color: rgb(255, 203, 31);
+  text-decoration: none;
+}
+.superior-menu > .side-links > *:hover {
+  color: rgb(255, 203, 31);
+  text-decoration: none;
+}
+
+.superior-menu > .side-links > .-active {
+  color: rgb(255, 203, 31);
+}
