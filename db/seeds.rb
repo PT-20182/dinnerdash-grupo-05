@@ -5,7 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
-MealCategory.create(name: 'Massa', meal_ammount: 2)
-MealCategory.create(name: 'Peixe', meal_ammount: 0)
-MealCategory.create(name: 'Salada', meal_ammount: 3)
