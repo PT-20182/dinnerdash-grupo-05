@@ -1,0 +1,11 @@
+<% @meal_categories.each do |meal_category| %>
+
+  <p><%= meal_category.name %></p>
+  <ol>
+    <% meal_category.meals.each do |meal| %>
+      <li><%= meal.name %></li>
+    <% end %>
+  </ol>
+<% end %>
+
+<%= render "navbar/navbar" %>

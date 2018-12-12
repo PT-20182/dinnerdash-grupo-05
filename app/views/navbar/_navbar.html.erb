@@ -1,0 +1,8 @@
+<div class="superior-menu navbar">
+  <span class="title navbar-brand">dinnerdash</span>
+  <% if user_signed_in? %>
+  <%= render "navbar/links_user_logged" %>
+  <% else %>
+  <%= render "navbar/links_user_not_logged" %>
+  <% end %>
+</div>

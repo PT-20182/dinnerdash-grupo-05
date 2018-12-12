@@ -1,0 +1,7 @@
+<span class="side-links">
+  <% if current_user.is_admin %>
+    <span class="-active">backoffice</span>
+  <% end %>
+  <span>perfil</span>
+  <span><%= link_to 'sair', destroy_user_session_path, method: :delete, class: 'clean-link' %></span>
+</span>
