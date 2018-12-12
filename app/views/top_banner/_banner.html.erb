@@ -1,0 +1,14 @@
+<!-- imagem superior -->
+<div class="img-superior <%= if is_backoffice; "-backoffice" else "-not-backoffice" end %> ">
+
+  <!-- navbar -->
+  <%= render "top_banner/navbar" %>
+
+  <!-- titulo do backoffice -->
+  <div class="pagetitle-container">
+    <div class="pagetitle-area">
+      <div class="title"><%= title %></div>
+      <div class="explanation"><%= subtitle %></div>
+    </div>
+  </div>
+</div>

@@ -1,11 +1,1 @@
-<% @meal_categories.each do |meal_category| %>
-
-  <p><%= meal_category.name %></p>
-  <ol>
-    <% meal_category.meals.each do |meal| %>
-      <li><%= meal.name %></li>
-    <% end %>
-  </ol>
-<% end %>
-
-<%= render "navbar/navbar" %>
+  <%= render "top_banner/banner", is_backoffice: false, title: "Monte o seu prato", subtitle: "Escolha sua salada, molho, prato principal, guarnição e bebida" %>

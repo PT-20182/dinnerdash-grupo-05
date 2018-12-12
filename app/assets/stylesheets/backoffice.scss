@@ -10,7 +10,13 @@
     height: auto;
     flex-grow: 6;
     background-size: cover;
-    background-image: url("helloquence-61189.jpg");
+
+    &.-backoffice {
+      background-image: url("helloquence-61189.jpg");
+    }
+    &.-not-backoffice {
+      background-image: url("jay-wennington-2065.jpg");
+    }
 }
 
 .table-area {
