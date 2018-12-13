@@ -12,12 +12,11 @@ class MealCategoriesController < ApplicationController
   
   def create
     @meal_category = MealCategory.create(meal_category_params)
-    redirect_to meal_categories_path
-    if @meal.invalid?
-      render 'new'
+    if @meal_category.valid?
+      @meal_category.save!
+      redirect_to meal_categories_path
     else
-      @meal.save!
-      redirect_to meals_path
+      render 'new'
     end
   end
 

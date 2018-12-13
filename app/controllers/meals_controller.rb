@@ -8,11 +8,11 @@ class MealsController < ApplicationController
   def create
     @meal = Meal.new(meal_params)
     @meal.available = true
-    if @meal.invalid?
-      render 'new'
-    else
+    if @meal.valid?
       @meal.save!
       redirect_to meals_path
+    else
+      render 'new'
     end
   end
 
