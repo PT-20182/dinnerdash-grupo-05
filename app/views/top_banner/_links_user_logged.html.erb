@@ -1,6 +1,6 @@
 <span class="side-links">
   <% if current_user.is_admin %>
-    <span class="-active">backoffice</span>
+    <%= link_to 'backoffice', meal_categories_path, class: 'clean-link -active' %>
   <% end %>
   <span>perfil</span>
   <span><%= link_to 'sair', destroy_user_session_path, method: :delete, class: 'clean-link' %></span>

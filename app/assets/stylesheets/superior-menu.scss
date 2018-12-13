@@ -13,8 +13,10 @@
   text-decoration: none;
   color: rgb(224, 224, 224);
 }
+
 .clean-link {
   color: rgb(224, 224, 224);
+  &.-active { color: rgb(255, 203, 31); }
   text-decoration: none;
 }
 .clean-link:hover {
@@ -24,8 +26,4 @@
 .superior-menu > .side-links > *:hover {
   color: rgb(255, 203, 31);
   text-decoration: none;
-}
-
-.superior-menu > .side-links > .-active {
-  color: rgb(255, 203, 31);
 }
