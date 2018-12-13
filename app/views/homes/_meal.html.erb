@@ -10,8 +10,47 @@
     <div class="price">R$ <%= meal.price %> por porção</div>
     <div class="buy-area">
       <span>Quantidade</span>
-      <select name="" id="" class="form-control quant-selector"></select>
-      <a href="" class="button">Adicionar ao meu prato</a>
+      <select name="" id="meal-quant <%= meal.id %>" class="form-control quant-selector">
+        <% for i in 1...10 %>
+          <option value="<%= i %>"><%= i %></option>
+        <% end %>
+      </select>
+      <button class="button" id="add-meal-button <%= meal.id %>">Adicionar ao meu prato</button>
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  document
+    .getElementById("add-meal-button <%= meal.id %>")
+    .addEventListener('click', () => {
+      // console.log
+      let cart = {}
+      if (sessionStorage.getItem("cart"))
+        cart = JSON.parse(sessionStorage.getItem("cart"))
+
+      // adicionar o negocio ao carrinho
+      cart["<%= meal.id %>"] = {
+        name: "<%= meal.name %>",
+        unitPrice: "<%= meal.price %>",
+        imageUrl: "<%= url_for(meal.image) %>",
+        needsUpdate: true,
+      }
+
+      // pegar a quantidade que já tem
+      const cartItemQuant =
+        cart["<%= meal.id %>"].quantity === undefined
+          ? 0
+          : cart["<%= meal.id %>"].quantity
+
+      // pegar os itens sendo adicionados agora
+      const mealQuant = Number(document.getElementById("meal-quant <%= meal.id %>").value)
+      
+      // colocar a nova quantidade
+      cart["<%= meal.id %>"].quantity = cartItemQuant + mealQuant
+      
+      sessionStorage.setItem("cart", JSON.stringify(cart))
+
+      // updateCarrinho(cart);
+    })
+</script>
