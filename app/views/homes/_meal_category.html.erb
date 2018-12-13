@@ -1,0 +1,8 @@
+<div class="mealcateg-container">
+  <h3 class="categ-title"><%= meal_category.name %></h3>
+  <div class="meals-container">
+    <% meal_category.meals.each do |meal| %>
+      <%= if meal.available; render "meal", meal: meal; end %>
+    <% end %>
+  </div>
+</div>

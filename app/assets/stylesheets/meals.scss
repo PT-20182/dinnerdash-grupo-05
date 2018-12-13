@@ -39,8 +39,9 @@
   // display: inline-block;
   border: 1px solid #5a5a5a;
   width: 200px;
+  // height: 335px;
 
-  margin: 0.8em;
+  margin: 0.8em 0 0.8em 0.8em;
 
   .image-plus-name {
     margin: 0;
@@ -138,8 +139,17 @@
 
 // container das meals em meals#index
 .meals-container {
+  flex: 1;
   display: flex;
+  overflow: auto;
+  min-height: 400px;
   flex-wrap: wrap;
+
+  .meals-box-GAMBIARRA {
+    min-height: min-content;
+    display: flex;
+  }
+  // display: flex;
 }
 
 .add-margin {

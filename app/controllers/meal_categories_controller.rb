@@ -1,5 +1,6 @@
 class MealCategoriesController < ApplicationController
   before_action :set_meal_category, only: [:destroy, :edit, :update]
+  before_action :require_admin_user
 
   def index
     @meal_categories = MealCategory.all
@@ -12,6 +13,12 @@ class MealCategoriesController < ApplicationController
   def create
     @meal_category = MealCategory.create(meal_category_params)
     redirect_to meal_categories_path
+    if @meal.invalid?
+      render 'new'
+    else
+      @meal.save!
+      redirect_to meals_path
+    end
   end
 
   def destroy
@@ -36,5 +43,10 @@ class MealCategoriesController < ApplicationController
   end
   def meal_category_params
     params.require(:meal_category).permit(:name)
+  end
+  def require_admin_user
+    unless current_user && current_user.is_admin
+      redirect_to new_user_session_path
+    end
   end
 end

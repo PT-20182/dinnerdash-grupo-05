@@ -11,10 +11,18 @@
 
   <body>
     <% if notice %>
-      <p class="notice"><%= notice %></p>
+      <p class="devise-message -notice" id="devise-notice"><%= notice %></p>
+      <script type="text/javascript">
+        const notice = document.getElementById("devise-notice")
+        setTimeout(() => { notice.remove() }, 3000)
+      </script>
     <% end %>
     <% if alert %>
-      <p class="alert"><%= alert %></p>
+      <p class="devise-message -alert" id="devise-alert"><%= alert %></p>
+      <script type="text/javascript">
+        const notice = document.getElementById("devise-alert")
+        setTimeout(() => { notice.remove() }, 3000)
+      </script>
     <% end %>
     <%= yield %>
   </body>

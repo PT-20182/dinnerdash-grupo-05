@@ -1,0 +1,16 @@
+<% title =
+    if user_signed_in?
+      "Bem-vindx, #{current_user.name}"
+    else
+      "Monte o seu prato"
+    end
+
+   subtitle = "Escolha sua salada, molho, prato principal, guarnição e bebida"
+%>
+<%= render "top_banner/banner", is_backoffice: false, title: title, subtitle: subtitle %>
+
+<div class="home-container">
+  <% MealCategory.all.each do |meal_category| %>
+    <%= render "meal_category", meal_category: meal_category %>
+  <% end %>
+</div>

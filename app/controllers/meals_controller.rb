@@ -7,8 +7,13 @@ class MealsController < ApplicationController
 
   def create
     @meal = Meal.new(meal_params)
-    @meal.save!
-    redirect_to meals_path
+    @meal.available = true
+    if @meal.invalid?
+      render 'new'
+    else
+      @meal.save!
+      redirect_to meals_path
+    end
   end
 
   def index
@@ -20,7 +25,7 @@ class MealsController < ApplicationController
     redirect_to meals_url
   end
 
-  def edit 
+  def edit
   end
 
   def update
