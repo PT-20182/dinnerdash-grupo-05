@@ -8,8 +8,12 @@ class MealsController < ApplicationController
   def create
     @meal = Meal.new(meal_params)
     @meal.available = true
-    @meal.save!
-    redirect_to meals_path
+    if @meal.invalid?
+      render 'new'
+    else
+      @meal.save!
+      redirect_to meals_path
+    end
   end
 
   def index

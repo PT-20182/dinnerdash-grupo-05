@@ -13,6 +13,12 @@ class MealCategoriesController < ApplicationController
   def create
     @meal_category = MealCategory.create(meal_category_params)
     redirect_to meal_categories_path
+    if @meal.invalid?
+      render 'new'
+    else
+      @meal.save!
+      redirect_to meals_path
+    end
   end
 
   def destroy
