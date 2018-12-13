@@ -1,0 +1,22 @@
+@keyframes disapear {
+  0% { opacity: 1; }
+  100% { opacity: 0; }  
+}
+
+body > .devise-message {
+  position: absolute;
+  left: 50%;
+  font-size: 20px;
+  
+  animation-name: disapear;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  
+  &.-notice {
+    color: yellow;
+  }
+  
+  &.-alert {
+    color: red;
+  }
+}
